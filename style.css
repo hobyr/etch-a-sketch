@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gridrow {
+  display: flex;
+  gap: 20px;
+}
+
+.square {
+  min-width: 100px;
+  min-height: 100px;
+  background-color: green;
+}
+
+.square:hover {
+  background-color: yellow;
+}
