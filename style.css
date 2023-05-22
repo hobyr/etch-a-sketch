@@ -1,20 +1,37 @@
-.container {
+html, body {
+  box-sizing: border-box;
+  padding: 0 25px;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .gridrow {
+  justify-content: center;
+}
+
+.container, .gridrow {
   display: flex;
-  gap: 20px;
+  width: 100%;
 }
 
 .square {
-  min-width: 100px;
-  min-height: 100px;
-  background-color: green;
+  flex: 1;
+  max-width: 50px;
+  aspect-ratio: 1 / 1;
+  background-color: #aacc00;
+  border: 1px solid black;
 }
 
 .square:hover {
-  background-color: yellow;
+  background-color: #ddff33;
 }
